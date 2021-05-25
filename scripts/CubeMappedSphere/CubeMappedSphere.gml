@@ -228,8 +228,7 @@ function CubeMappedSphere( radius, hires ) {
    VBOs.Begin(side[k]);
    var tcx=0.0;
    for (var j=0; j<=res; j++){//per x
-    var tcy=1.0;
-    for (var i=0; i<=res;i++){//per y                     // 
+    var tcy=1.0;    for (var i=0; i<=res;i++){//per y
      if (i==res) {v1++; v2++; break;}                     // v1+1    __  v2+1 
 	    count++;                                          //      |\   | 
 	    //two triangles together per column segment       // |    | \ 2|
@@ -259,15 +258,13 @@ function CubeMappedSphere( radius, hires ) {
 	  var xV=tcx+rD;
       var yU=tcy;
 	  var yV=tcy-rD;
-	  var p1=CMS_TriVNT(pointsX[v1], pointsY[v1], pointsZ[v1], xU, yU);
-      v1++;
-	  var p2=CMS_TriVNT(pointsX[v2], pointsY[v2], pointsZ[v2], xV, yU);
-      v2++;
+	  var p1=CMS_TriVNT(pointsX[v1], pointsY[v1], pointsZ[v1], xU, yU); v1++;
+	  var p2=CMS_TriVNT(pointsX[v2], pointsY[v2], pointsZ[v2], xV, yU); v2++;
 	  var p3=CMS_TriVNT(pointsX[v1], pointsY[v1], pointsZ[v1], xU, yV);
 	  CMS_MakeTri( side[k], p1,p2,p3 );
-	  var q1=CMS_TriVNT( pointsX[v2], pointsY[v2], pointsZ[v2], xU, yV );
+	  var q1=CMS_TriVNT( pointsX[v1],   pointsY[v1],   pointsZ[v1],   xU, yV );
 	  var q2=CMS_TriVNT( pointsX[v2-1], pointsY[v2-1], pointsZ[v2-1], xV, yU );
-	  var q3=CMS_TriVNT( pointsX[v1], pointsY[v1], pointsZ[v1], xV, yV );
+	  var q3=CMS_TriVNT( pointsX[v2],   pointsY[v2],   pointsZ[v2],   xV, yV );
 	  CMS_MakeTri( side[k], q1,q2,q3 )
      }
      tcy-=rD;
