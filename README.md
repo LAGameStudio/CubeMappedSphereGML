@@ -15,3 +15,5 @@ Also included:
 - A test case.
 
 This example uses no shaders.  You could easily add shaders to this pipeline.
+
+Sources for textures: https://www.reddit.com/r/gamedev/comments/3ys4vg/a_month_ago_i_released_a_free_space_skybox/
