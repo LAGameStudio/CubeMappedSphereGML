@@ -17,3 +17,12 @@ Also included:
 This example uses no shaders.  You could easily add shaders to this pipeline.
 
 Sources for textures: https://www.reddit.com/r/gamedev/comments/3ys4vg/a_month_ago_i_released_a_free_space_skybox/
+Original links posted on reddit:
+Link: http://wwwtyro.github.io/planet-3d/
+Github: https://github.com/wwwtyro/planet-3d
+Screenshots: http://imgur.com/a/kHIJC
+As ever, the code and everything you make with it is free as in beer and free as in speech. No attribution required. If you use it, though, I'd love to hear about it, so link me to whatever you make. You can find me on twitter @wwwtyro. Enjoy! :)
+Edit: By request, here's the space skybox generator:
+Link: http://wwwtyro.github.io/space-3d
+Github: https://github.com/wwwtyro/space-3d
+Screenshots: http://imgur.com/a/Upzuv
